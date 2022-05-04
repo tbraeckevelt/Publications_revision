@@ -7,12 +7,12 @@ Furthermore, ALGO = A (conjugate gradient algorithm for orbitals) is often more 
 From personal experience I would say that convergence issues occur more often for M06_L than for SCAN, so maybe use as default ALGO = A and a preconverged wavefunction.
 
 
-Meta-GGA calculations require POTCAR files that include information on the kinetic energy density of the core-electrons. 
-To check whether a particular POTCAR contains this information, type:
-    grep kinetic POTCAR
-This should yield at least the following lines (for each element on the file):
-    kinetic energy-density
-    mkinetic energy-density pseudized
-and for PAW datasets with partial core corrections:
+Meta-GGA calculations require POTCAR files that include information on the kinetic energy density of the core-electrons. \
+To check whether a particular POTCAR contains this information, type: \
+    grep kinetic POTCAR \
+This should yield at least the following lines (for each element on the file): \
+    kinetic energy-density \
+    mkinetic energy-density pseudized \
+and for PAW datasets with partial core corrections: \
     kinetic energy density (partial)
 

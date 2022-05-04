@@ -1,6 +1,6 @@
-Here you can the input scripts for SOC calculations using the HSE XC functional.
-INCAR_pre was used to find a good initial guess for the charge density and wavefunction (simple PBE suffices for a good initial guess).
-INCAR_HSESOC performs the actual PBE+SOC calculation.
+Here you can the input scripts for SOC calculations using the HSE XC functional. \
+INCAR_pre was used to find a good initial guess for the charge density and wavefunction (simple PBE suffices for a good initial guess). \
+INCAR_HSESOC performs the actual PBE+SOC calculation. 
 
 For the actual SOC calculation (not the pre-calculation), non-collinear calculations with VASP version 5.4.4 was performed.
 

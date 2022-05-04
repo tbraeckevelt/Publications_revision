@@ -1,6 +1,6 @@
-Here you can the input scripts for SOC calculations using the PBE XC functional.
-INCAR_pre was used to find a good initial guess for the charge density and wavefunction.
-INCAR_SOC performs the actual PBE+SOC calculation.
+Here you can the input scripts for SOC calculations using the PBE XC functional. \
+INCAR_pre was used to find a good initial guess for the charge density and wavefunction. \
+INCAR_SOC performs the actual PBE+SOC calculation. \
 No dispersion method was used, but that is also possible via IVDW tag similar to the regular PBE calculations.
 
 For the actual SOC calculation (not the pre-calculation), non-collinear calculations with VASP version 5.4.4 was performed.
