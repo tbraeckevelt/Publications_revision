@@ -4,7 +4,7 @@ The PBE PAW potentials were used.
 
 We used VASP version 5.4.4.
 
-For all calculations a gamma centered kpoint grid was used, with:
-gamma: 443
-delta_Cs: 642
-delta_FA: 424
+For all calculations a gamma centered kpoint grid was used, with: \
+gamma: 443 \
+delta_Cs: 642 \
+delta_FA: 424 
