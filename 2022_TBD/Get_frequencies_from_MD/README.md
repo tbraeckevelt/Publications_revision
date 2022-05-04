@@ -1,4 +1,5 @@
 in utils_pDOS.py you can find the PhononDensity class and all methods needed to go from CP2K velocities in xyz format to a h5 file to a PhononDensity instance. From which we can compute the entropy and free energy. Moreover functions to plot the phonon density and calculate the similarity between different PhononDensity instances, are also present in this file. \
+
 When calculating the phonon density, there are a few options that you can set: \
 bsize = None or (delta_f = None):     To specify the frequency sampling, in this work we always set bsize = 1200 \
 remove_vel_cm = True:                 To remove the center of mass velocity \
