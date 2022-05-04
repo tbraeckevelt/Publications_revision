@@ -31,7 +31,7 @@
   &MD
     ENSEMBLE                      NPT_F
     STEPS                         10000000
-    TIMESTEP                      2             # 10 could also be possible in theory but 5 seems to give problems
+    TIMESTEP                      2             
     TEMPERATURE                   300
     STEP_START_VAL 0
     &THERMOSTAT
@@ -45,7 +45,7 @@
     &END THERMOSTAT
     &BAROSTAT
       PRESSURE [MPa]  0
-      TIMECON  500                               # Should occur enough (but cannot be to low), compare this number with the total time of one run
+      TIMECON  500                              
       &THERMOSTAT
         TYPE  SAME_AS_PARTICLE
       &END THERMOSTAT
@@ -163,7 +163,7 @@
     ! Exchange and Correlation functional
     ! ********************************************
     &XC                                     
-      &XC_FUNCTIONAL               PBE                 #Still wrong functional!!!!!!!!!!
+      &XC_FUNCTIONAL               PBE                 
       &END XC_FUNCTIONAL 
 
       &VDW_POTENTIAL

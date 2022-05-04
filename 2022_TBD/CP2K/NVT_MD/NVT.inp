@@ -31,7 +31,7 @@
   &MD
     ENSEMBLE                      NVT
     STEPS                         10000000
-    TIMESTEP                      2             # 10 could also be possible in theory but 5 seems to give problems
+    TIMESTEP                      2             
     TEMPERATURE                   300
     STEP_START_VAL 0
     &THERMOSTAT
@@ -156,7 +156,7 @@
     ! Exchange and Correlation functional
     ! ********************************************
     &XC                                     
-      &XC_FUNCTIONAL               PBE                 #Still wrong functional!!!!!!!!!!
+      &XC_FUNCTIONAL               PBE                 
       &END XC_FUNCTIONAL 
 
       &VDW_POTENTIAL
