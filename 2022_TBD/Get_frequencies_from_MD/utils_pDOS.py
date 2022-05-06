@@ -115,10 +115,10 @@ class PhononDensity():
         delta_f is None, then a single FFT is used over the entire trajectory.
 
         When calculating the phonon density, there are a few options that you can set:
-        bsize = None or (delta_f = None):     To specify the frequency sampling, in this work we always set bsize = 1200
-        remove_vel_cm = True:                 To remove the center of mass velocity
-        normed_to_ndof = True:                To norm the phonon density of states to the total number of degrees of freedom
-        par_sym_lst = None:                   To create parital phonon densities, only include the phonon density contributions of the elements specified in this list
+        bsize = None or (delta_f = None):     To specify the frequency sampling, in this work we always set bsize = 1200 \
+        remove_vel_cm = True:                 To remove the center of mass velocity \
+        normed_to_ndof = True:                To norm the phonon density of states to the total number of degrees of freedom \
+        par_sym_lst = None:                   To create partial phonon densities. If not None, only the phonon density contributions of the elements specified in this list are included
         """
         with h5py.File(filepath, 'r') as f:
             time_signal = np.array(list(f['trajectory']['vel'])) #time_signal[time, atom, component]
